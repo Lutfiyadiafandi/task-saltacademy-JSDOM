@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ccc;
+    padding: 0 10px;
+}
+/* FORM */
+.form_container {
+    background-color: white;
+    max-width: 400px;
+    padding: 30px;
+    margin: 18px auto;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+    display: none;
+}
+.title h2 {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: rgb(104, 126, 250);
+    text-transform: uppercase;
+}
+form {
+    width: 100%;
+}
+form .input_field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+form .input_field label {
+    color: #757575;
+    margin-right: 10px;
+    font-size: 0.9em;
+    width: 200px;
+}
+form .input_field input,
+form .input_field select {
+    width: 100%;
+    font-size: 0.9em;
+    padding: 6px 8px;
+    border: 1px solid #d5dbd9;
+    border-radius: 3px;
+}
+#biodata {
+    height: 100px;
+    width: 100%;
+}
+#submit , #cancel {
+    color: white;
+    text-transform: capitalize;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 10px;
+    font-size: 1em;
+}
+#submit {
+    background-color: rgb(104, 126, 250);
+}
+#cancel {
+    background-color: rgb(247, 91, 91);
+}
+
+/* CARD */
+.card_container {
+    max-width: 1110px;
+    /* background-color: white; */
+    margin: 100px auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card_container .card {
+    width: 350px;
+    background-color: #e3e3e3;
+    border: 5px solid #757575;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 50px;
+    padding: 20px;
+}
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    image-resolution: 300dpi;
+    margin-top: -50px;
+    margin-bottom: 25px;
+}
+.ronaldo {
+    object-position: 0 0;
+}
+.shawn {
+    object-position: 0 0;
+}
+.card_container .card h3 {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+    color: #1a1a1a;
+}
+.card_container .card .data {
+    display: flex;
+    justify-content: center;
+}
+.card_container .card .data .label ,
+.card_container .card .data .input {
+    margin: 5px;
+}
+p {
+    font-size: 0.9em;
+    padding: 5px;
+    color: #616571;
+}
+.deleteBtn {
+    padding: 8px 24px;
+    background-color: rgb(242, 48, 48);
+    color: white;
+    font-size: 0.8em;
+    cursor: pointer;
+    margin-top: 8px;
+    border-radius: 24px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.789);
+}
+/* NAV */
+.nav {
+    display: flex;
+    margin: 50px auto;
+    justify-content: center;
+}
+#add_card {
+    padding: 12px 28px;
+    background-color: #757575;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 24px;
+    margin-right: 20px;
+}
+#search {
+    border: 1px solid #d5dbd9;
+    padding: 8px 12px;
+    width: 250px;
+    margin-left: 20px;
+    border-radius: 3px;
+}
+
+/* Responsive Breakpoint */
+
+/* HP */
+@media screen and (max-width :576px ){
+    .card-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+/* Tab */
+@media screen and (max-width :900px ){
+    .card-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

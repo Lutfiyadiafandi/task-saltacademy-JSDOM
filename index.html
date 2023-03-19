@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <button id="add_card">Add Card</button>
+      <input type="search" id="search" placeholder="Search...">
+    </div>
+
+    <div class="form_container">
+      <div class="title">
+        <h2>Registration Form</h2>
+      </div>
+
+      <form id="form">
+        <!-- Name -->
+        <div class="input_field">
+          <label for="fullname">Full Name</label>
+          <input type="text" placeholder="Name..." id="fullname" />
+        </div>
+
+        <!-- Image -->
+        <div class="input_field">
+          <label for="image">Image</label>
+          <input type="url" placeholder="Url Image..." id="image" />
+        </div>
+
+        <!-- Gender -->
+        <div class="input_field">
+          <label for="gender">Gender</label>
+          <select id="gender">
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+
+        <!-- Hobbies -->
+        <div class="input_field">
+          <label for="hobbies">Hobbies</label>
+          <input type="text" placeholder="Hobbies..." id="hobbies" />
+        </div>
+
+        <!-- Job -->
+        <div class="input_field">
+          <label for="job">Job</label>
+          <input type="text" placeholder="Job..." id="job" />
+        </div>
+
+        <!-- Nationality -->
+        <div class="input_field">
+          <label for="nationality">Nationality</label>
+          <select name="nationality" id="nationality">
+            <option>Arabian</option>
+            <option>American</option>
+            <option>Australian</option>
+            <option>British</option>
+            <option>Indonesian</option>
+            <option>Indian</option>
+            <option>Japanese</option>
+            <option>Spanish</option>
+            <option>Portuguese</option>
+          </select>
+        </div>
+
+        <!-- Submit -->
+        <div class="input_field">
+          <input type="submit" value="submit" id="submit" />
+          <input type="button" value="cancel" id="cancel" />
+        </div>
+      </form>
+    </div>
+
+    <div class="card_container">
+      <div class="card">
+        <img class="ronaldo" src="/img/ronaldoo.jpg" />
+        <h3 class="name">Cristiano Ronaldo</h3>
+        <div class="data">
+          <div class="label">
+            <p>Gender</p>
+            <p>Hobbies</p>
+            <p>Job</p>
+            <p>Nationality</p>
+          </div>
+          <div class="input">
+            <p>: Male</p>
+            <p>: Playing Football</p>
+            <p>: Football Player</p>
+            <p>: Portuguese</p>
+          </div>
+        </div>
+        <button class="deleteBtn">Delete</button>
+        <!-- <button class="editBtn">Edit</button> -->
+      </div>
+      
+      <div class="card">
+        <img src="/img/can i be him.jpg" />
+        <h3 class="name">James Arthur</h3>
+        <div class="data">
+          <div class="label">
+            <p>Gender</p>
+            <p>Hobbies</p>
+            <p>Job</p>
+            <p>Nationality</p>
+          </div>
+          <div class="input">
+            <p>: Male</p>
+            <p>: Write Songs</p>
+            <p>: Singer</p>
+            <p>: British</p>
+          </div>
+        </div>
+        <button class="deleteBtn">Delete</button>
+      </div>
+      
+      <div class="card">
+        <img class="shawn" src="/img/shawn.jpg" />
+        <h3 class="name">Shawn Mendes</h3>
+        <div class="data">
+          <div class="label">
+            <p>Gender</p>
+            <p>Hobbies</p>
+            <p>Job</p>
+            <p>Nationality</p>
+          </div>
+          <div class="input">
+            <p>: Male</p>
+            <p>: Playing Guitar</p>
+            <p>: Singer</p>
+            <p>: Canadian</p>
+          </div>
+        </div>
+        <button class="deleteBtn">Delete</button>
+      </div>
+
+      <div class="card">
+        <img src="/img/tomholland.jpg" />
+        <h3 class="name">Tom Holland</h3>
+        <div class="data">
+          <div class="label">
+            <p>Gender</p>
+            <p>Hobbies</p>
+            <p>Job</p>
+            <p>Nationality</p>
+          </div>
+          <div class="input">
+            <p>: Male</p>
+            <p>: Playing Football</p>
+            <p>: Actor</p>
+            <p>: British</p>
+          </div>
+        </div>
+        <button class="deleteBtn">Delete</button>
+      </div>
+
+      <div class="card">
+        <img src="/img/hansohee.jpg" />
+        <h3 class="name">Han So Hee</h3>
+        <div class="data">
+          <div class="label">
+            <p>Gender</p>
+            <p>Hobbies</p>
+            <p>Job</p>
+            <p>Nationality</p>
+          </div>
+          <div class="input">
+            <p>: Female</p>
+            <p>: Painting</p>
+            <p>: Actrees & Models</p>
+            <p>: Korean</p>
+          </div>
+        </div>
+        <button class="deleteBtn">Delete</button>
+      </div>
+
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
